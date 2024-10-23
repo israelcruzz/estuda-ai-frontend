@@ -35,6 +35,7 @@ class Simulate {
         videosUrl: document.querySelector(".videos-area") as HTMLDivElement,
         helpContent: document.querySelector(".help-content") as HTMLDivElement,
         btnSimulate: document.getElementById("btn-simulate") as HTMLButtonElement,
+        headingArea: document.querySelector(".heading-area") as HTMLDivElement,
     }
 
     constructor() {
@@ -53,6 +54,17 @@ class Simulate {
     public renderSimulate() {
         if (this.simulate !== null) {
             this.areaSimulate.headingText.textContent = this.simulate.name;
+
+            this.areaSimulate.headingArea.innerHTML += `
+                    <section class="flex gap-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8f8f8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-text"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><path d="M8 11h8"/><path d="M8 7h6"/></svg>
+
+                        <div class="flex flex-col">
+                        <span class="text-white/80">Questões</span>
+                        <span class="font-semibold text-white">${this.simulate.questiosCount}</span>
+                        </div>
+                    </section>
+            `
 
             this.simulate.aboutContent.themes.forEach(theme => {
                 this.areaSimulate.helpContent.innerHTML += `
