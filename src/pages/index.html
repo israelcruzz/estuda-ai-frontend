@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/book-copy.png"
+      type="image/x-icon"
+    />
+    <title>Estuda.Ai</title>
+  </head>
+  <body>
+    <main class="container flex">
+      <section class="sidebar w-[320px] flex-col gap-10 hidden md:flex">
+        <div class="flex gap-2">
+          <i data-lucide="book-copy" class="logo"></i>
+          <span class="font-bold text-white text-2xl">Estuda.Ai</span>
+        </div>
+
+        <nav class="flex flex-col gap-6">
+          <a
+            href="./index.html"
+            data-page="index"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="home"></i>
+            <span class="font-bold text-xl">Home</span>
+          </a>
+
+          <a
+            href="./chatbot.html"
+            data-page="chatbot"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="bot-message-square"></i>
+            <span class="font-bold text-xl">Chat</span>
+          </a>
+
+          <a
+            href="./simulados.html"
+            data-page="simulados"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="notebook-text"></i>
+            <span class="font-bold text-xl">Simulados</span>
+          </a>
+        </nav>
+      </section>
+      <!--Pesquisa-->
+      <div class="w-full h-full flex flex-col md:flex-row">
+        <section class="w-full flex flex-col gap-6 p-6">
+          <!-- <div class="search-box flex gap-2 p-3 bg-black rounded-full">
+            <i class="text-gray-500" data-lucide="search"></i>
+            <input
+              type="text"
+              placeholder="Pesquisar"
+              class="bg-transparent outline-none text-white"
+            />
+          </div> -->
+          <div
+            class="welcome w-full text-white flex justify-between items-center"
+          >
+            <h1 class="text-2xl font-bold">Bem Vindo! 👋</h1>
+            <div class="bg-[#01feb1] p-2 rounded-full font-bold">
+              <h3 class="date-now text-black">Quarta, 23/2024</h3>
+            </div>
+          </div>
+
+          <div class="simulates-area w-full grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+
+          <div class="w-full">
+            <div class="flex justify-between items-center">
+              <h1 class="text-white font-bold text-2xl">Provas Anteriores</h1>
+
+              <div class="relative inline-block w-[120px] rounded-full">
+                <select
+                  name="year"
+                  class="filter-exams block appearance-none w-full bg-black text-white py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-black/80 focus:border-gray-500"
+                >
+                  <option value="all">Tudo</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                </select>
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                >
+                  <i class="text-emerald-400" data-lucide="chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="old-exams-area w-full flex flex-col gap-4"></div>
+        </section>
+        <section class="w-full md:w-1/2 p-6 flex flex-col gap-6">
+          <img
+            src="../assets/images/cover.png"
+            class="rounded-3xl w-full max-h-[280px] h-[350px] object-cover"
+          />
+
+          <div class="flex flex-col gap-4">
+            <h1 class="text-white font-bold text-2xl">Data do Vestibulinho</h1>
+
+            <div class="bg-black rounded-2xl p-2">
+              <div class="flex flex-col items-center justify-center text-white">
+                <h3>Dezembro</h3>
+                <span>2024</span>
+              </div>
+              <ul>
+                <div class="flex text-white gap-2 justify-between">
+                  <li class="p-2">01</li>
+                  <li class="p-2">02</li>
+                  <li class="p-2">03</li>
+                  <li class="p-2">04</li>
+                  <li class="p-2">05</li>
+                  <li class="p-2">06</li>
+                  <li class="p-2">07</li>
+                </div>
+                <div class="flex text-white gap-2 justify-between">
+                  <li class="p-2">08</li>
+                  <li class="p-2">09</li>
+                  <li class="p-2">10</li>
+                  <li class="p-2">11</li>
+                  <li class="p-2">12</li>
+                  <li class="p-2">13</li>
+                  <li class="p-2">14</li>
+                </div>
+
+                <div class="flex text-white gap-2 justify-between">
+                  <li class="p-2">15</li>
+                  <li class="p-2">16</li>
+                  <li class="p-2">17</li>
+                  <li class="p-2">18</li>
+                  <li class="p-2">19</li>
+                  <li class="p-2">20</li>
+                  <li class="p-2">21</li>
+                </div>
+
+                <div class="flex text-white gap-2 justify-between">
+                  <li class="p-2">22</li>
+                  <li class="p-2">23</li>
+                  <li
+                    class="bg-emerald-400 rounded-full p-2 w-10 h-10 flex justify-center items-center cursor-pointer"
+                    title="Dia do Vestibulinho"
+                  >
+                    24
+                  </li>
+                  <li class="p-2">25</li>
+                  <li class="p-2">26</li>
+                  <li class="p-2">27</li>
+                  <li class="p-2">28</li>
+                </div>
+
+                <div class="flex text-white gap-2 justify-between">
+                  <li class="p-2">29</li>
+                  <li class="p-2">30</li>
+                  <li class="p-2">31</li>
+                  <li class="text-gray-500 p-2">01</li>
+                  <li class="text-gray-500 p-2">02</li>
+                  <li class="text-gray-500 p-2">03</li>
+                  <li class="text-gray-500 p-2">04</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../dist/scripts/navbar.js"></script>
+    <script src="../../dist/scripts/index.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

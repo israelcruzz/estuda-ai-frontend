@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Estuda.Ai</title>
+  </head>
+  <body>
+    <main class="container flex">
+      <section class="sidebar w-[320px] flex-col gap-10 hidden md:flex">
+        <div class="flex gap-2">
+          <i data-lucide="book-copy" class="logo"></i>
+          <span class="font-bold text-white text-2xl">Estuda.Ai</span>
+        </div>
+
+        <nav class="flex flex-col gap-6">
+          <a
+            href="./index.html"
+            data-page="index"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="home"></i>
+            <span class="font-bold text-xl">Home</span>
+          </a>
+
+          <a
+            href="./chatbot.html"
+            data-page="chatbot"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="bot-message-square"></i>
+            <span class="font-bold text-xl">Chat</span>
+          </a>
+
+          <a
+            href="./simulados.html"
+            data-page="simulados"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="notebook-text"></i>
+            <span class="font-bold text-xl">Simulados</span>
+          </a>
+        </nav>
+      </section>
+      <section class="w-full flex flex-col md:flew-row p-6 gap-6 md:flex-row">
+        <div class="w-full flex flex-col gap-6">
+          
+          <div class="w-full p-6 rounded-3xl bg-black grid grid-cols-2">
+            <div class="w-full flex flex-col justify-between">
+              <header>
+                <span class="heading-text text-white font-bold text-2xl md:text-[32px]"
+                  ></span
+                >
+              </header>
+
+              <button
+                id="btn-simulate"
+                class="bg-[#01feb1] w-full py-2 rounded-full font-semibold hover:bg-[#01feb1]/90"
+              >
+                Ir para o simulado
+              </button>
+            </div>
+
+            <div>
+              <img
+                src="../assets/images/simulate.svg"
+                width="322px"
+                height="296px"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="h-full w-full flex gap-6">
+            <div class="h-full bg-black w-[200px] p-6 rounded-3xl">
+              <span class="text-white font-bold text-2xl">O que cai?</span>
+              <i class="text-white" data-lucide="arrow-right"></i>
+            </div>
+
+            <div class="help-content flex flex-col gap-3 w-full"></div>
+
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 flex flex-col">
+          <div class="flex flex-col gap-3 mb-6">
+            <h1 class="text-white font-bold text-2xl">
+              Conteúdos para ir bem nos simulados
+            </h1>
+            <span class="text-slate-300 font-regular text-base">
+              Aqui estão alguns vídeos que irão auxiliar no simulado
+            </span>
+          </div>
+
+          <div class="videos-area w-full flex flex-col gap-6"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../../dist/scripts/simulate.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../dist/scripts/navbar.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

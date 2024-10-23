@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <title>Estuda.Ai</title>
+  </head>
+  <body>
+    <main class="container flex">
+      <section class="sidebar w-[320px] flex-col gap-10 hidden md:flex">
+        <div class="flex gap-2">
+          <i data-lucide="book-copy" class="logo"></i>
+          <span class="font-bold text-white text-2xl">Estuda.Ai</span>
+        </div>
+
+        <nav class="flex flex-col gap-6">
+          <a
+            href="./index.html"
+            data-page="index"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="home"></i>
+            <span class="font-bold text-xl">Home</span>
+          </a>
+
+          <a
+            href="./chatbot.html"
+            data-page="chatbot"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="bot-message-square"></i>
+            <span class="font-bold text-xl">Chat</span>
+          </a>
+
+          <a
+            href="./simulados.html"
+            data-page="simulados"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="notebook-text"></i>
+            <span class="font-bold text-xl">Simulados</span>
+          </a>
+        </nav>
+      </section>
+
+      <section class="w-full h-full p-6">
+        <div
+          class="relative bg-black w-full h-full rounded-3xl p-6 flex flex-col"
+        >
+          <div
+            class="help-area w-full h-full flex flex-col items-center justify-center gap-6"
+          >
+            <h1 class="text-white text-3xl font-bold">Estude com a gente!</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div
+                class="w-full md:w-[320px] h-[180px] bg-[#030303] border border-[#080808] rounded-3xl p-6 flex flex-col justify-between"
+              >
+                <header class="flex">
+                  <h2 class="text-white text-2xl font-bold">
+                    Pergunte qualquer coisa sobre a ETEC
+                  </h2>
+                  <i data-lucide="badge-info" class="info text-white"></i>
+                </header>
+
+                <span class="text-[#666666]"
+                  >Learn expert negotiation tips to close deals
+                  effectively.</span
+                >
+              </div>
+
+              <div
+                class="w-full md:w-[320px] h-[180px] bg-[#030303] border border-[#080808] rounded-3xl p-6 flex flex-col justify-between"
+              >
+                <header class="flex">
+                  <h2 class="text-white text-2xl font-bold">
+                    Pergunte qualquer coisa sobre a ETEC
+                  </h2>
+                  <i data-lucide="badge-info" class="info text-white"></i>
+                </header>
+
+                <span class="text-[#666666]"
+                  >Learn expert negotiation tips to close deals
+                  effectively.</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="messages-area"></div>
+
+          <div
+            class="w-full bg-slate-900 rounded-full flex items-center pr-4 mt-auto"
+          >
+            <input
+              type="text"
+              name=""
+              id="inpt-chat"
+              placeholder="O que deseja perguntar?"
+              class="flex-1 w-full bg-transparent p-6 outline-none text-white"
+            />
+            <button class="send-button hover:bg-[#01FEB1]/90">
+              <i data-lucide="send-horizontal" class="text-white"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../dist/scripts/chatbot.js"></script>
+    <script src="../../dist/scripts/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script>
+      lucide.createIcons();
+      document.getElementById("show-toast");
+    </script>
+  </body>
+</html>

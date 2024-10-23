@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Estuda.Ai</title>
+  </head>
+  <body>
+    <main class="container flex">
+      <section class="sidebar w-[320px] flex-col gap-10 hidden md:flex">
+        <div class="flex gap-2">
+          <i data-lucide="book-copy" class="logo"></i>
+          <span class="font-bold text-white text-2xl">Estuda.Ai</span>
+        </div>
+
+        <nav class="flex flex-col gap-6">
+          <a
+            href="./index.html"
+            data-page="index"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="home"></i>
+            <span class="font-bold text-xl">Home</span>
+          </a>
+
+          <a
+            href="./chatbot.html"
+            data-page="chatbot"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="bot-message-square"></i>
+            <span class="font-bold text-xl">Chat</span>
+          </a>
+
+          <a
+            href="./simulados.html"
+            data-page="simulados"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="notebook-text"></i>
+            <span class="font-bold text-xl">Simulados</span>
+          </a>
+        </nav>
+      </section>
+      <section class="flex flex-col gap-6 p-6">
+        <div
+          class="search-box max-w-[320px] w-full flex gap-2 p-3 bg-black rounded-full"
+        >
+          <i class="text-gray-500" data-lucide="search"></i>
+          <input
+            id="search"
+            type="text"
+            placeholder="Pesquisar"
+            class="bg-transparent outline-none text-white"
+          />
+        </div>
+        <h1 class="font-semibold text-2xl text-white">Simulados 📚</h1>
+        <div class="simulates-area grid grid-cols-2 lg:grid-cols-4 text-white gap-6"></div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../../dist/scripts/simulates.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../dist/scripts/navbar.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

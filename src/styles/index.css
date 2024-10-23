@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --color-background: #080808;
+  --color-primary: #01feb1;
+  --color-secondary: #666666;
+  --color-tertiary: #070707;
+  --color-quaternary: #0c0c0c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-width: 100%;
+  max-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-background);
+  position: relative;
+}
+
+.toast {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 48px;
+  background-color: #030303;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 999;
+}
+
+.container {
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.container .logo {
+  color: var(--color-primary);
+  width: 28px;
+  height: 28px;
+}
+
+.container .sidebar {
+  max-width: 320px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-tertiary);
+  padding: 48px 42px;
+}
+
+.container .nav-item-area {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: white;
+}
+
+.container .nav-item-area-active {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background-color: var(--color-primary);
+  border-radius: 999px;
+  padding: 12px;
+}
+
+.container .send-button {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  border-radius: 999px;
+  align-items: center;
+  padding: 8px;
+}
+
+.container .info {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+
+.container .messages-area {
+  max-height: 85%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 8px;
+}
+
+.messages-area::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 999px;
+}
+
+.messages-area::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 999px;
+}
+
+.messages-area::-webkit-scrollbar-track {
+  background-color: #2a2a2a;
+}
+
+.container .messages-area .client-message {
+  align-self: flex-end;
+  background-color: var(--color-quaternary);
+  border-radius: 24px 24px 0px 24px;
+  padding: 24px;
+  color: white;
+}
+
+.container .messages-area .bot-message {
+  align-self: flex-start;
+  background-color: var(--color-primary);
+  border-radius: 24px 24px 24px 0px;
+  padding: 24px;
+  color: white;
+}
