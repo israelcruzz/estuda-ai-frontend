@@ -107,7 +107,7 @@ class Index {
                     </section>
                 `
 
-                const baseUrl = window.location.origin; 
+                const baseUrl = "https://israelcruzz.github.io/estuda-ai-frontend"; 
                 const fullUrl = `${baseUrl}/simulado.html?id=${id}`;
 
                 div.addEventListener('click', () => {
