@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="text-white">
+    <main class="container flex">
+      <section class="sidebar w-[320px] flex-col gap-10 hidden md:flex">
+        <div class="flex gap-2">
+          <i data-lucide="book-copy" class="logo"></i>
+          <span class="font-bold text-white text-2xl">Estuda.Ai</span>
+        </div>
+
+        <nav class="flex flex-col gap-6">
+          <a
+            href="./index.html"
+            data-page="index"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="home"></i>
+            <span class="font-bold text-xl">Home</span>
+          </a>
+
+          <a
+            href="./chatbot.html"
+            data-page="chatbot"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="bot-message-square"></i>
+            <span class="font-bold text-xl">Chat</span>
+          </a>
+
+          <a
+            href="./simulados.html"
+            data-page="simulados"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="notebook-text"></i>
+            <span class="font-bold text-xl">Simulados</span>
+          </a>
+
+          <a
+            href="./study.html"
+            data-page="study"
+            class="nav-item nav-item-area"
+          >
+            <i data-lucide="library"></i>
+            <span class="font-bold text-xl">Estudos</span>
+          </a>
+        </nav>
+      </section>
+      <section class="h-[660px] max p-6">
+        <div class="flex flex-col gap-2 mb-6">
+          <h1 class="text-2xl font-bold text-white mb-1">Área de Estudo 📝</h1>
+          <span class="text-sm font-normal text-gray-400"
+            >(clique 2 vezes no board para criar uma nova tarefa)</span
+          >
+        </div>
+
+        <div class="h-full grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+          <div class="w-full h-full">
+            <div class="flex justify-between items-center mb-4">
+              <h2 class="text-lg font-semibold">A Estudar</h2>
+            </div>
+            <div
+              class="h-full max-w-[320px] w-[320px] column bg-zinc-900 p-2 rounded-lg"
+            >
+              <div
+                class="card bg-black border border-white/10 drop-shadow-xl p-4 rounded-lg mb-4"
+                draggable="true"
+              >
+                <h3 class="font-semibold">Estudar Matemática</h3>
+              </div>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex justify-between items-center mb-4">
+              <h2 class="text-lg font-semibold">Estudado</h2>
+            </div>
+            <div
+              class="h-full max-w-[320px] w-[320px] column bg-zinc-900 p-2 rounded-lg"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../../dist/scripts/navbar.js"></script>
+    <script src="../../dist/scripts/study.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
