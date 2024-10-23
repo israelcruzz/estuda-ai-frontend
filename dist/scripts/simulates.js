@@ -87,8 +87,7 @@ class Simulates {
                         </div>
                     </section>
                 `;
-                    const baseUrl = window.location.origin;
-                    const fullUrl = `${baseUrl}/simulado.html?id=${id}`;
+                    const fullUrl = `https://israelcruzz.github.io/estuda-ai-frontend/simulado.html?id=${id}`;
                     div.addEventListener('click', () => {
                         window.open(fullUrl, '_blank');
                     });
