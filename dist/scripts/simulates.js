@@ -89,7 +89,7 @@ class Simulates {
                 `;
                     const fullUrl = `https://israelcruzz.github.io/estuda-ai-frontend/simulado.html?id=${id}`;
                     div.addEventListener('click', () => {
-                        window.open(fullUrl, '_blank');
+                        window.location.href = fullUrl;
                     });
                     (_a = this.simulatesArea) === null || _a === void 0 ? void 0 : _a.appendChild(div);
                 });

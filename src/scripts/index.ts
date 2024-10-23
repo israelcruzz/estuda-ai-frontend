@@ -110,7 +110,7 @@ class Index {
                 const fullUrl = `https://israelcruzz.github.io/estuda-ai-frontend/simulado.html?id=${id}`;
 
                 div.addEventListener('click', () => {
-                    window.open(fullUrl, '_blank');
+                    window.location.href = fullUrl
                 })
 
                 this.simulatesArea?.appendChild(div);
