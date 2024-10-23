@@ -84,7 +84,7 @@ class Chatbot {
         const div = document.createElement("div");
         div.classList.add("bot-message");
         const span = document.createElement("span");
-        span.classList.add("text-white");
+        span.classList.add("text-black");
         span.innerHTML = message;
         div.appendChild(span);
         this.messagesArea.appendChild(div);
